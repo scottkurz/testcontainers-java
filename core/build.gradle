@@ -104,7 +104,7 @@ if (!org.gradle.internal.os.OperatingSystem.current().isWindows()) {
 }
 
 dependencies {
-    baseline 'org.testcontainers:testcontainers:1.14.3', {
+    baseline 'org.testcontainers:testcontainers:1.14.3.1', {
         exclude group: "*", module: "*"
     }
 
@@ -131,7 +131,7 @@ dependencies {
         exclude(group: "net.java.dev.jna")
     }
 
-    shaded ('com.github.docker-java:docker-java-transport-okhttp:3.2.1') {
+    shaded ('com.github.docker-java:docker-java-transport-okhttp:3.2.2-rc2') {
         exclude(group: 'net.java.dev.jna')
         exclude(group: 'com.google.code.findbug')
         exclude(group: 'org.slf4j')
